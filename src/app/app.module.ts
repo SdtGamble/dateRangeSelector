@@ -9,6 +9,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { ExtendedDateRangeFilterComponent } from './extended-date-range-filter/extended-date-range-filter.component';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CustomHeaderComponent } from './custom-header/custom-header.component';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
+    MatIconModule,
     NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
