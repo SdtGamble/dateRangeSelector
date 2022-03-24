@@ -1,4 +1,14 @@
-<mat-form-field appearance="fill">
+<!-- <mat-form-field appearance="fill">
   <input type="text" ngxDaterangepickerMd [(ngModel)]="selected" />
     <div>Selected : {{selected | json}}</div>
-</mat-form-field>
+</mat-form-field> -->
+
+<input type="text"
+  ngxDaterangepickerMd
+  [(ngModel)]="selected"
+  [showCustomRangeLabel]="true"
+  [alwaysShowCalendars]="true"
+  [ranges]="ranges"
+  [linkedCalendars]="true"
+
+  placeholder="Enter date range">
