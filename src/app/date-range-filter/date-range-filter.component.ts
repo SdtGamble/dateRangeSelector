@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+import { CustomHeaderComponent } from '../custom-header/custom-header.component';
 
 @Component({
   selector: 'app-date-range-filter',
@@ -7,7 +8,8 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
   styleUrls: ['./date-range-filter.component.css']
 })
 export class DateRangeFilterComponent implements OnInit {
-  events: string[];
+    // make ExampleHeaderComponent type available in our template:
+    readonly CustomHeaderComponent = CustomHeaderComponent;
 
   constructor() { }
 
