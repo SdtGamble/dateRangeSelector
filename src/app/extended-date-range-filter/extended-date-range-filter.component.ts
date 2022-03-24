@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Moment } from 'moment';
 
 @Component({
   selector: 'app-extended-date-range-filter',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./extended-date-range-filter.component.css']
 })
 export class ExtendedDateRangeFilterComponent implements OnInit {
+
+  selected: { startDate: Moment, endDate: Moment };
 
   constructor() { }
 

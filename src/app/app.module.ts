@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ExtendedDateRangeFilterComponent } from './extended-date-range-filter/extended-date-range-filter.component';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ExtendedDateRangeFilterComponent } from './extended-date-range-filter/e
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatFormFieldModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
   bootstrap: [DateRangeFilterComponent]
