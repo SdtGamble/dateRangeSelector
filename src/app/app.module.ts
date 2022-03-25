@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DateRangeFilterComponent } from './date-range-filter/date-range-filter.component';
+import { DateAdapter } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule, MatDateRangeInput, MatDateRangePicker } from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,7 +12,7 @@ import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { CustomPanelComponent } from './custom-panel/custom-panel.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 
 
 
