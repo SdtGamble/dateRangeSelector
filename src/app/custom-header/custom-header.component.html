@@ -2,30 +2,30 @@
 <app-custom-panel></app-custom-panel>
 
 <!-- Calendar header -->
-<div class="example-header">
+<div class="calendar-header">
   <!-- "previous" buttons -->
   <button
     mat-icon-button
-    class="example-double-arrow"
+    class="calendar-double-arrow"
     (click)="previousClicked('year')"
   >
     <mat-icon>keyboard_arrow_left</mat-icon>
     <mat-icon>keyboard_arrow_left</mat-icon>
   </button>
-  <button mat-icon-button (click)="previousClicked('month')">
+  <button mat-icon-button class="calendar-single-arrow" (click)="previousClicked('month')">
     <mat-icon>keyboard_arrow_left</mat-icon>
   </button>
 
   <!-- center label -->
-  <span class="example-header-label">{{ periodLabel }}</span>
+  <span class="calendar-header-label">{{ periodLabel }}</span>
 
   <!-- "next" buttons -->
-  <button mat-icon-button (click)="nextClicked('month')">
+  <button mat-icon-button class="calendar-single-arrow" (click)="nextClicked('month')">
     <mat-icon>keyboard_arrow_right</mat-icon>
   </button>
   <button
     mat-icon-button
-    class="example-double-arrow"
+    class="calendar-double-arrow"
     (click)="nextClicked('year')"
   >
     <mat-icon>keyboard_arrow_right</mat-icon>
