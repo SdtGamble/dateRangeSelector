@@ -8,6 +8,9 @@
   [showCustomRangeLabel]="true"
   [alwaysShowCalendars]="true"
   [linkedCalendars]="true"
+  
+  [locale]="locale"
+  (endDateChanged)="doSomething($event)"
 
   placeholder="Enter date range">
 
