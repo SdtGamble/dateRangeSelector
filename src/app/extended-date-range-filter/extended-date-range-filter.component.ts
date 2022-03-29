@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Dayjs } from 'dayjs';
+import { LocaleConfig } from 'ngx-daterangepicker-material';
 
 @Component({
   selector: 'app-extended-date-range-filter',
@@ -9,6 +10,10 @@ import { Dayjs } from 'dayjs';
 export class ExtendedDateRangeFilterComponent implements OnInit {
 
   selected: {startDate: Dayjs, endDate: Dayjs};
+  locale: LocaleConfig = {
+    customRangeLabel: ' - ',
+    format: "DD/MM/YYYY"
+  }
 
   // ranges: any = {
   //   'Today': [moment(), moment()],
@@ -22,6 +27,10 @@ export class ExtendedDateRangeFilterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  doSomething(lol : string) {
+    console.log("lol");
   }
 
 }
